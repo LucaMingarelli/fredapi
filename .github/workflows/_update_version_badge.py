@@ -22,7 +22,7 @@ VERSION_BADGE_STRING_NEW = f'[![version](https://img.shields.io/badge/version-{V
 README_NEW = README.replace(VERSION_BADGE_STRING, VERSION_BADGE_STRING_NEW)
 
 with open('README.md', 'w') as f:
-    w.read(README_NEW)
+    f.write(README_NEW)
 
 os.system(f"""git commit -m "GitHub Workflow: Version badge updated to version={VERSION}" """)
 
