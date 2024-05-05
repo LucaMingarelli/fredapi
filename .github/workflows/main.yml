@@ -39,3 +39,4 @@ jobs:
         run: |
           python setup.py --quiet install
           coverage run --source fredapi.fred fredapi/tests/test_fred.py
+          python .github/workflows/_update_version_badge.py
